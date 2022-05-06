@@ -26,4 +26,8 @@ NASA_API_KEY=XXXXXXXXXX
 
 ## Using Docker Compose
 
-Run `docker compose up`.
+Run docker compose
+
+```
+docker compose -f docker-compose.yml up
+```
