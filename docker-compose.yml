@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  nasa_img_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
