@@ -3,7 +3,12 @@ version: "3.7"
 services:
   nasa_img_app:
     build:
+      # Tell Docker compose where to find the Dockerfile
+      # Using "." says "look in the current directory"
       context: .
-      dockerfile: Dockerfile
+    ports:
+      # Tell Docker Compose that we want to map the port 3000 to the host port 3000
+      # This will send requests to http://localhost:300 to the container on port 3000
+      - "3000:3000"
     env_file:
       - .env
